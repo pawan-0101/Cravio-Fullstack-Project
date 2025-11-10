@@ -1,5 +1,7 @@
 # 🍽️ Cravio - Food Delivery App
-**LIVE**- https://cravio-frontend.onrender.com
+**LIVE frontend**- "https://cravio-frontend-xk1f.onrender.com"
+**LIVE backend**- "https://cravio-backend-gkqq.onrender.com"
+
 
 **Cravio** is a modern, full-stack food delivery web application built using the **MERN** stack (MongoDB, Express.js, React.js, Node.js), integrated with **Stripe** for secure online payments. Whether you're craving something spicy or sweet, Cravio brings your favorite meals to your doorstep with ease.
 
