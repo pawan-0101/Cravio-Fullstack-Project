@@ -9,7 +9,8 @@ const StoreContextProvider=(props)=>{
     // Read backend URL from environment for dev/prod flexibility.
     // Set VITE_API_URL in .env for local development (example: VITE_API_URL="http://localhost:4000").
     //const url = import.meta.env.VITE_API_URL || "https://cravio-backend.onrender.com";
-    const url="http://localhost:4000" 
+   // const url="http://localhost:4000" 
+    const url =import.meta.env.VITE_API_URL || "https://cravio-backend-gkqq.onrender.com";
     // const url = "https://cravio-backend.onrender.com";
     // Helpful during debugging to confirm which backend URL the frontend will call
     console.log('API base URL:', url);
