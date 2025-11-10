@@ -1,12 +1,18 @@
 import { createContext,  useEffect,  useState } from "react";
-import axios from 'axios'
-;
+import axios from 'axios';
+
 export const StoreContext=createContext(null)
 
 const StoreContextProvider=(props)=>{
 
     const [cartItems,setCartItems] = useState({});
-    const url="https://cravio-backend.onrender.com";
+    // Read backend URL from environment for dev/prod flexibility.
+    // Set VITE_API_URL in .env for local development (example: VITE_API_URL="http://localhost:4000").
+    //const url = import.meta.env.VITE_API_URL || "https://cravio-backend.onrender.com";
+    const url="http://localhost:4000" 
+    // const url = "https://cravio-backend.onrender.com";
+    // Helpful during debugging to confirm which backend URL the frontend will call
+    console.log('API base URL:', url);
     const [token,setToken]=useState("")
 
     const [food_list,setFoodList] = useState([]);
